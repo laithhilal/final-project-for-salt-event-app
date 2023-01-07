@@ -1,0 +1,113 @@
+.EventPage__test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    background-image: url('../assets/backgroundphone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.EventPage__test2 {
+    background-color: rgba(35, 35, 35, 0.8); 
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.EventPage {
+    padding: 1rem;
+    width: 300px;
+ 
+}
+
+.EventPage__title {
+    word-wrap: break-word;
+    font-size: 2rem;
+}
+
+.EventPage__desc, .EventPage__location, .EventPage__date {
+    word-wrap: break-word;
+}
+
+span {
+    color: #a0a0a0;
+}
+
+.EventPage__stopEditBtn, .EventPage__saveBtn {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(39, 145, 145, 0.7);
+    color: #FFFBEA;
+    letter-spacing: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
+}
+
+.EventPage__stopEditBtn {
+    background-color: rgba(78, 86, 86, 0.7);
+    width: max(17rem, 60%);
+}
+
+.EventPage__form {
+    display: flex;
+    flex-direction: column;
+    width: max(17rem, 60%);
+}
+
+input, textarea {
+    background-color: rgba(35, 35, 35, 0.8); 
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.EventPage__label {
+    display: block;
+}
+
+.EventPage__descInput {
+    resize: vertical;
+    overflow: auto;
+    color: white;
+    min-height: 8rem;
+}
+
+@media screen and (min-width: 500px) {
+    .EventPage {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 80vh;
+    }
+
+    .EventPage__test2 {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        max-height: 100%;
+    }
+
+    .EventPage__title {
+        font-size: 3.5rem;
+    }
+
+    .EventPage__desc {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        overflow-y: scroll;
+    }
+
+    .EventPage__info {
+        margin-top: auto;
+        font-size: 1.5rem;
+    }
+}

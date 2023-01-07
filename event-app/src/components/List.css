@@ -1,0 +1,88 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding-top: 7rem;
+    padding: 2rem;
+    width: 100vw;
+    gap: 1rem;
+}
+
+.list_eventLink {
+    margin: 0.8rem;
+    padding: 0.01rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #FFFBEA;
+}
+
+.plus-icon {
+    font-size: 5rem;
+    color: #FFFBEA;
+}
+
+.list--profile {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 0 1rem;
+    padding-bottom: 0.8rem;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    gap: 1rem;
+    width: 100vw;
+    max-width: 1000px;
+    justify-content: space-between
+}
+
+.list--profile::-webkit-scrollbar {
+    display: none; 
+}
+
+.list--profile .eventCard {
+    box-shadow: none;
+    background-image: url('../assets/balloonbackground.png');
+    width: 300px;
+    min-width: 300px;
+}
+
+.search {
+    margin-top: 7rem;
+    width: min-content;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.search * {
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 500px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        max-width: 800px;
+    }
+
+    .search {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .list--profile {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .search {
+        grid-column: span 3;
+    }
+}
+

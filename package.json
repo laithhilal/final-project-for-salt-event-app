@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "i-all": "npm i && cd event-app && npm i && cd ../server && npm i && cd ..",
+    "start": "concurrently --kill-others \"cd event-app && npm start && cd ..\" \"cd server && npm start && cd ..\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

@@ -1,0 +1,70 @@
+.addEvent {
+    display: flex;
+    flex-direction: column;
+    width: max(17rem, 60%);
+}
+
+.addEvent__div {
+    padding-top: 10rem;
+    background-image: url('../assets/backgroundphone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.addEvent__listLink {
+    margin: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    color: #FFFBEA;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.back-icon {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.addEvent__button {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(39, 145, 145, 0.8);
+    color: #FFFBEA;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.addEvent input, .addEvent textarea {
+    background-color: rgba(12, 13, 13, 0.8);
+    color: #FCF9F9;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+}
+
+.addEvent__input-desc{
+    resize: vertical;
+    overflow: auto;
+    color: white;
+    min-height: 8rem;
+}
+
+input {
+    color-scheme: dark;
+}
